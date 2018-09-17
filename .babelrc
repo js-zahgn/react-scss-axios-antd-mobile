@@ -1,0 +1,7 @@
+{
+  "presets": [
+    "es2015",
+    "react"
+  ],
+  "plugins": ["transform-runtime",["import", { "style": "css", "libraryName": "antd-mobile" }]]
+}

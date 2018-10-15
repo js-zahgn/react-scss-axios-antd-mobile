@@ -4,6 +4,7 @@ import { TabBar } from 'antd-mobile';
 import '../static/style/main.scss';
 import Home from '../components/Home';
 import Category from '../components/Category';
+import MyInfo from './MyInfo';
 
 class Main extends React.Component {
     constructor(props) {
@@ -22,7 +23,7 @@ class Main extends React.Component {
                         selectedIcon={<span className="iconfont icon-home" />}
                         selected={this.state.selectedTab === 'home'}
                         onPress={()=> this.setState({ selectedTab: 'home' })}>
-                        <Home/></TabBar.Item>
+                        <Home /> </TabBar.Item>
                     <TabBar.Item title="分类" key="分类"
                         icon={<span className="iconfont icon-list" />}
                         selectedIcon={<span className="iconfont icon-list" />}
@@ -40,7 +41,7 @@ class Main extends React.Component {
                         selectedIcon={<span className="iconfont icon-my" />}
                         selected={this.state.selectedTab === 'myInfo'}
                         onPress={()=> this.setState({ selectedTab: 'myInfo' })}>
-                        会员中心诶呦挖虐啊</TabBar.Item>
+                        <MyInfo/></TabBar.Item>
                 </TabBar>
             </div>
             
